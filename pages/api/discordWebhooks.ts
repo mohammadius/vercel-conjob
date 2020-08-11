@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { env } from "process";
 import axios from "axios";
 import Parser from "rss-parser";
-import { env } from "process";
 let parser = new Parser();
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {

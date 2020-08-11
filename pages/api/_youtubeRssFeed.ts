@@ -10,7 +10,7 @@ export default async (rssUrl: string, webhookUrl: string) => {
 		let pubDate = new Date(item.pubDate);
 		let nowDate = new Date();
 		var diffMins = Math.round((((pubDate.getDate() - nowDate.getDate()) % 86400000) % 3600000) / 60000);
-		return diffMins < 31;
+		return diffMins < 21;
 	});
 
 	await log(title, `recieved ${items.length} rss feed total\n${newItems.length > 0 ? newItems.length : "none"} of them are new`);

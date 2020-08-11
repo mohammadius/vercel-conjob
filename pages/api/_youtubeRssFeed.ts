@@ -9,7 +9,7 @@ export default async (rssUrl: string, webhookUrl: string) => {
 	let newItems = items.filter((item) => {
 		let pubDate = new Date(item.pubDate);
 		let nowDate = new Date();
-		var diffMins = Math.round((((pubDate.getDate() - nowDate.getDate()) % 86400000) % 3600000) / 60000);
+		var diffMins = Math.round((((nowDate.getDate() - pubDate.getDate()) % 86400000) % 3600000) / 60000);
 		return diffMins < 21;
 	});
 

@@ -1,4 +1,4 @@
-import log from "./_log";
+import log from "./log";
 import axios from "axios";
 import DateDiff from "date-diff";
 import Parser from "rss-parser";

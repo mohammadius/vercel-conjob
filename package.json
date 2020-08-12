@@ -1,23 +1,26 @@
 {
-  "name": "cronjobs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "date-diff": "^0.2.2",
-    "next": "9.5.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "rss-parser": "^3.9.0"
-  },
-  "devDependencies": {
-    "@types/node": "^14.0.27",
-    "@types/react": "^16.9.46",
-    "typescript": "^3.9.7"
-  }
+	"name": "cronjobs",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"axios": "^0.19.2",
+		"cheerio": "^1.0.0-rc.3",
+		"date-diff": "^0.2.2",
+		"next": "9.5.2",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"rss-parser": "^3.9.0"
+	},
+	"devDependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/cheerio": "^0.22.21",
+		"@types/node": "^14.0.27",
+		"@types/react": "^16.9.46",
+		"typescript": "^3.9.7"
+	}
 }

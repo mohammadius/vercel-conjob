@@ -19,7 +19,7 @@ export default async (rssUrl, webhookUrl) => {
 		return diff.minutes() < 21;
 	});
 
-	await log(`${title}: recieved ${items.length} rss feed total\n${newItems.length > 0 ? newItems.length : "none"} of them are new`);
+	await log(`${title}: recieved ${items.length} rss feed total. ${newItems.length > 0 ? newItems.length : "none"} of them are new`);
 
 	newItems.forEach(async (item) => {
 		await axios({
